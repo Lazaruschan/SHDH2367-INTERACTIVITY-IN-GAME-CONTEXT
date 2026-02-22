@@ -1,254 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHDH2322 / SHDH2026 - Interactivity in Game Context</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .tab-content { display: none; }
-        .tab-content.active { display: block; }
-    </style>
-</head>
-<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col">
+import React, { useState } from 'react';
+import { CheckCircle2, RefreshCw } from 'lucide-react';
 
-    <!-- Header -->
-    <header class="bg-indigo-900 text-white py-12 px-6 shadow-md">
-        <div class="max-w-5xl mx-auto">
-            <p class="text-indigo-200 text-sm font-semibold tracking-wider uppercase mb-2">Hong Kong Community College (Semester 2, 2025/2026)</p>
-            <h1 class="text-3xl md:text-5xl font-bold mb-4">SHDH2322 / SHDH2026<br><span class="text-indigo-300">Interactivity in Game Context</span></h1>
-            <p class="text-lg text-indigo-100 max-w-2xl">Explore the fundamental concepts of game design, playful user experience, and interactivity using Unity.</p>
-        </div>
-    </header>
+export default function ReactImportTest() {
+    const [count, setCount] = useState(0);
 
-    <!-- Navigation -->
-    <nav class="bg-white border-b border-slate-200 sticky top-0 z-10 shadow-sm overflow-x-auto">
-        <div class="max-w-5xl mx-auto flex">
-            <button onclick="switchTab('home')" id="btn-home" class="tab-btn active flex items-center gap-2 px-6 py-4 font-medium text-sm transition-colors whitespace-nowrap border-b-2 border-indigo-600 text-indigo-700">
-                <i class="fas fa-info-circle"></i> Overview
-            </button>
-            <button onclick="switchTab('schedule')" id="btn-schedule" class="tab-btn flex items-center gap-2 px-6 py-4 font-medium text-sm transition-colors whitespace-nowrap text-slate-500 hover:text-indigo-600 hover:bg-slate-50 border-b-2 border-transparent">
-                <i class="fas fa-calendar-alt"></i> Schedule
-            </button>
-            <button onclick="switchTab('assessments')" id="btn-assessments" class="tab-btn flex items-center gap-2 px-6 py-4 font-medium text-sm transition-colors whitespace-nowrap text-slate-500 hover:text-indigo-600 hover:bg-slate-50 border-b-2 border-transparent">
-                <i class="fas fa-file-alt"></i> Assessments
-            </button>
-            <button onclick="switchTab('resources')" id="btn-resources" class="tab-btn flex items-center gap-2 px-6 py-4 font-medium text-sm transition-colors whitespace-nowrap text-slate-500 hover:text-indigo-600 hover:bg-slate-50 border-b-2 border-transparent">
-                <i class="fas fa-download"></i> Resources & Unity
-            </button>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="flex-grow max-w-5xl mx-auto w-full p-6 py-8">
-        
-        <!-- OVERVIEW TAB -->
-        <div id="home" class="tab-content active space-y-8">
-            <section class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                <h2 class="text-2xl font-bold text-indigo-900 mb-4 border-b pb-2">Course Objectives</h2>
-                <p class="text-slate-700 mb-4 leading-relaxed">This subject introduces the fundamental concepts of game design, playful user experience and interactivity. It aims to enable students to construct narrative interaction designs in the game context based on exploring the principles of interactive storytelling, dynamic game balancing and user psychology.</p>
+    return (
+        <div className="flex flex-col items-center justify-center min-h-screen bg-slate-100 p-6">
+            <div className="bg-white p-8 rounded-2xl shadow-lg max-w-sm w-full text-center space-y-6">
                 
-                <h3 class="text-lg font-semibold text-slate-800 mt-6 mb-3">Intended Learning Outcomes:</h3>
-                <ul class="list-disc pl-6 space-y-2 text-slate-700">
-                    <li>Describe the fundamentals of interaction design in game context.</li>
-                    <li>Apply design skills through prototyping non-digital games.</li>
-                    <li>Employ psychological knowledge of human behavior in playing experiences.</li>
-                    <li>Outline the history of games to reflect the momentum from relatedness needs.</li>
-                </ul>
-            </section>
-
-            <section class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 flex items-start gap-4">
-                    <div class="bg-indigo-100 p-3 rounded-full text-indigo-600"><i class="fas fa-user-tie fa-lg"></i></div>
-                    <div>
-                        <h3 class="font-bold text-lg text-slate-800">Subject Leader</h3>
-                        <p class="text-slate-700 font-medium">LEUNG, Ching-man Olive</p>
-                        <p class="text-sm text-slate-500 mt-1"><i class="fas fa-map-marker-alt w-4"></i> Office: WK-S1312</p>
-                        <p class="text-sm text-indigo-600 mt-1"><i class="fas fa-envelope w-4"></i> olive.leung@cpce-polyu.edu.hk</p>
+                <div className="flex justify-center">
+                    <div className="bg-green-100 p-3 rounded-full">
+                        <CheckCircle2 className="w-10 h-10 text-green-600" />
                     </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 flex items-start gap-4">
-                    <div class="bg-indigo-100 p-3 rounded-full text-indigo-600"><i class="fas fa-chalkboard-teacher fa-lg"></i></div>
-                    <div>
-                        <h3 class="font-bold text-lg text-slate-800">Subject Lecturer</h3>
-                        <p class="text-slate-700 font-medium">CHAN, Long-fung Lazarus</p>
-                        <p class="text-sm text-indigo-600 mt-1"><i class="fas fa-envelope w-4"></i> lazarus.chan@cpce-polyu.edu.hk</p>
-                    </div>
-                </div>
-            </section>
-        </div>
 
-        <!-- SCHEDULE TAB -->
-        <div id="schedule" class="tab-content">
-            <div class="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
-                <div class="p-6 border-b border-slate-200 bg-slate-50">
-                    <h2 class="text-2xl font-bold text-indigo-900">Tentative Teaching Schedule</h2>
-                    <p class="text-slate-600 mt-1">1 hour of lecture & 2 hours of tutorial per week.</p>
-                </div>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-left border-collapse">
-                        <thead>
-                            <tr class="bg-slate-100 text-slate-700 text-sm uppercase tracking-wider">
-                                <th class="p-4 border-b font-semibold w-16 text-center">Wk</th>
-                                <th class="p-4 border-b font-semibold">Lecture</th>
-                                <th class="p-4 border-b font-semibold">Tutorial (Unity & C#)</th>
-                                <th class="p-4 border-b font-semibold w-32">Remarks</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-slate-700 divide-y divide-slate-200" id="schedule-body">
-                            <!-- Populated by JS -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <!-- ASSESSMENTS TAB -->
-        <div id="assessments" class="tab-content space-y-6">
-            <h2 class="text-2xl font-bold text-indigo-900 mb-6">Continuous Assessment (100%)</h2>
-            
-            <div class="grid gap-4" id="assessments-container">
-                <!-- Populated by JS -->
-            </div>
-
-            <div class="mt-8 bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg shadow-sm">
-                <h3 class="text-lg font-bold text-amber-800 flex items-center gap-2 mb-2">
-                    <i class="fas fa-exclamation-triangle"></i> Plagiarism Warning
-                </h3>
-                <p class="text-amber-900 text-sm leading-relaxed">
-                    You are strongly advised to pay attention to the rules and guidance notes regarding plagiarism. The College may take disciplinary actions against students when there is evidence of collusion. All included work of others must be attributed to its source.
-                </p>
-            </div>
-        </div>
-
-        <!-- RESOURCES TAB -->
-        <div id="resources" class="tab-content space-y-8">
-            <section class="bg-white p-6 rounded-lg shadow-sm border border-indigo-200 border-t-4 border-t-indigo-600">
-                <div class="flex items-start gap-4">
-                    <div class="bg-indigo-100 p-4 rounded-lg text-indigo-600 hidden sm:block">
-                        <i class="fab fa-unity fa-2x"></i>
-                    </div>
-                    <div>
-                        <span class="inline-block px-2 py-1 bg-indigo-100 text-indigo-800 text-xs font-bold rounded mb-2">Official Resource</span>
-                        <h2 class="text-xl font-bold text-slate-800 mb-2">Unity 6 Tutorial Example Package</h2>
-                        <p class="text-slate-600 mb-4 text-sm leading-relaxed">Download the official starter package for our tutorial sessions. This package contains pre-configured scenes, grayboxing materials, basic UI canvases, and starter C# scripts required for Weeks 1-6.</p>
-                        <div class="flex flex-wrap gap-3">
-                            <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded font-medium text-sm transition-colors flex items-center gap-2 shadow-sm">
-                                <i class="fas fa-download"></i> Download .unitypackage (v6.0)
-                            </button>
-                            <button class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 px-4 py-2 rounded font-medium text-sm transition-colors flex items-center gap-2 shadow-sm">
-                                <i class="fas fa-book"></i> View Setup Guide
-                            </button>
-                        </div>
-                        <p class="text-xs text-slate-500 mt-3">* Requires Unity 6 (2023.3+) or newer. File size: ~45MB.</p>
-                    </div>
-                </div>
-            </section>
-
-            <div class="grid md:grid-cols-2 gap-6">
-                <section class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                    <h3 class="text-lg font-bold text-slate-800 mb-4 border-b pb-2 flex items-center gap-2"><i class="fas fa-book-reader text-indigo-500"></i> Recommended Readings</h3>
-                    <ul class="space-y-4 text-sm text-slate-700">
-                        <li><strong>Adams, E. (2010).</strong> <em>Fundamentals of Game Design</em>. (2nd ed.), Berkeley, CA: New Riders.</li>
-                        <li><strong>Fullerton, T. & Swain, C. (2018).</strong> <em>Game Design Workshop: A Playcentric Approach to Creating Innovative Games</em>.</li>
-                        <li><strong>McGonigal, J (2011).</strong> <em>How Computer Game Makes You Smarter</em>.</li>
-                    </ul>
-                </section>
-
-                <section class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                    <h3 class="text-lg font-bold text-slate-800 mb-4 border-b pb-2 flex items-center gap-2"><i class="fas fa-laptop-code text-indigo-500"></i> Software Requirements</h3>
-                    <ul class="space-y-3 text-sm text-slate-700">
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Unity Hub & Unity 6 Editor</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Visual Studio 2022 (or VS Code) for C# Scripting</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Basic image editing software (Photoshop, GIMP, etc.)</li>
-                    </ul>
-                </section>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm mt-auto">
-        <p>© 2025/2026 College of Professional and Continuing Education, HKCC.</p>
-        <p class="mt-1">SHDH2322 / SHDH2026 Interactivity in Game Context</p>
-    </footer>
-
-    <script>
-        // Data
-        const scheduleData = [
-            { week: 1, lecture: "Intro to Interactivity & Gamification", tutorial: "Unity Basic I: Installation & interface overview", remarks: "" },
-            { week: 2, lecture: "The art of Playing", tutorial: "Unity Basic II: GameObjects, Components, Prefabs", remarks: "" },
-            { week: 3, lecture: "Information Architecture (IA) in Games", tutorial: "Asset Management: Importing, materials", remarks: "" },
-            { week: 4, lecture: "User Flow & UX Design in Games", tutorial: "Intro to UI in Unity: Canvas, anchors, buttons", remarks: "Assignment 1 Due" },
-            { week: 5, lecture: "Data Flow & Logic", tutorial: "Scripting Basics (C#): Variables, functions, UI scripts", remarks: "" },
-            { week: 6, lecture: "Grayboxing & Level Design", tutorial: "Prototyping in Unity: Probuilder, first-person controller", remarks: "" },
-            { week: 7, lecture: "Assignment 2: Research Presentation", tutorial: "Student Presentations", remarks: "Assignment 2 Due" },
-            { week: 8, lecture: "Rendering", tutorial: "Lighting & Camera: Directional/point lights, skyboxes", remarks: "" },
-            { week: 9, lecture: "Feedback Loops & Juiciness", tutorial: "Animation & Sound: Animator controller, AudioSource", remarks: "" },
-            { week: 10, lecture: "Gamification Mechanics", tutorial: "Advanced Interaction: Triggers, colliders, win/loss states", remarks: "" },
-            { week: 11, lecture: "Group Project Workshop", tutorial: "Technical troubleshooting & consultation", remarks: "" },
-            { week: 12, lecture: "Group Project Workshop", tutorial: "Polishing & Build: Optimization, PC/Mac builds", remarks: "" },
-            { week: 13, lecture: "Final Presentation", tutorial: "Assignment 3: Group Project Showcase", remarks: "Assignment 3 Due" }
-        ];
-
-        const assessmentsData = [
-            { name: "Assignment 1", weight: "30%", desc: "Game Design Document & Paper Prototyping: Conceptualise a game and document it prior to digital implementation." },
-            { name: "Assignment 2", weight: "30%", desc: "Digital Prototyping (Grayboxing or UI): Translate paper prototype into Unity focusing on spatial flow or functional UI." },
-            { name: "Group Project", weight: "40%", desc: "Interactive Experience: Develop a full, playable interactive game in Unity with a complete gameplay loop." }
-        ];
-
-        // Populate Schedule
-        const scheduleBody = document.getElementById('schedule-body');
-        scheduleData.forEach(row => {
-            const tr = document.createElement('tr');
-            tr.className = "hover:bg-slate-50 transition-colors";
-            tr.innerHTML = `
-                <td class="p-4 border-b text-center font-medium">${row.week}</td>
-                <td class="p-4 border-b">${row.lecture}</td>
-                <td class="p-4 border-b">${row.tutorial}</td>
-                <td class="p-4 border-b font-medium text-red-600 text-sm">${row.remarks}</td>
-            `;
-            scheduleBody.appendChild(tr);
-        });
-
-        // Populate Assessments
-        const assessmentsContainer = document.getElementById('assessments-container');
-        assessmentsData.forEach(item => {
-            const div = document.createElement('div');
-            div.className = "bg-white p-6 rounded-lg shadow-sm border border-slate-200 flex flex-col md:flex-row md:items-center gap-4";
-            div.innerHTML = `
-                <div class="bg-indigo-50 text-indigo-700 font-bold text-2xl p-4 rounded-lg text-center min-w-[100px]">
-                    ${item.weight}
-                </div>
                 <div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-1">${item.name}</h3>
-                    <p class="text-slate-600">${item.desc}</p>
+                    <h1 className="text-2xl font-bold text-slate-800">React is Working!</h1>
+                    <p className="text-slate-500 mt-2 text-sm">
+                        Imports for React, Lucide icons, and Tailwind CSS have successfully loaded.
+                    </p>
                 </div>
-            `;
-            assessmentsContainer.appendChild(div);
-        });
 
-        // Tab Switching Logic
-        function switchTab(tabId) {
-            // Hide all contents
-            document.querySelectorAll('.tab-content').forEach(el => {
-                el.classList.remove('active');
-            });
-            // Show selected content
-            document.getElementById(tabId).classList.add('active');
+                <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                    <p className="text-3xl font-black text-blue-600">{count}</p>
+                    <p className="text-xs text-slate-400 font-medium uppercase tracking-wider mt-1">Current Count</p>
+                </div>
 
-            // Update button styles
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.classList.remove('border-indigo-600', 'text-indigo-700');
-                btn.classList.add('text-slate-500', 'border-transparent');
-            });
-            
-            const activeBtn = document.getElementById(`btn-${tabId}`);
-            activeBtn.classList.remove('text-slate-500', 'border-transparent');
-            activeBtn.classList.add('border-indigo-600', 'text-indigo-700');
-        }
-    </script>
-</body>
-</html>
+                <button 
+                    onClick={() => setCount(prev => prev + 1)}
+                    className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 active:bg-blue-800 transition-colors font-medium"
+                >
+                    <RefreshCw className="w-4 h-4" />
+                    Increment Counter
+                </button>
+                
+            </div>
+        </div>
+    );
+}
