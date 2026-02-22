@@ -1,0 +1,82 @@
+# SHDH2367 Interactivity in Game Context 🎮
+
+**Hong Kong Community College (HKCC)**  
+**Semester 2, 2025/2026**
+
+Welcome to the official GitHub repository for **SHDH2367 Interactivity in Game Context**. This repository hosts course materials, tutorial assets, and the official Unity starter packages.
+
+---
+
+## 📖 Course Overview
+
+This subject introduces the fundamental concepts of game design, playful user experience, and interactivity. It aims to enable students to construct narrative interaction designs in the game context based on exploring the principles of interactive storytelling, dynamic game balancing, and user psychology. 
+
+In order to facilitate design iteration, this subject imparts research methods of user-centered design that involve prototype making and user testing to let students gain insights of how players may interact.
+
+### Intended Learning Outcomes
+Upon completion of this subject, students will be able to:
+- Describe the fundamentals of interaction design in game context.
+- Apply design skills through prototyping non-digital games.
+- Employ the psychological knowledge of human behavior in playing experience to interact with players.
+- Outline the history of games to reflect the momentum from relatedness needs among players.
+
+---
+
+## 👨‍🏫 Instructors
+
+* **Subject Leader:** LEUNG, Ching-man Olive (Office: WK-S1312 | ✉️ [olive.leung@cpce-polyu.edu.hk](mailto:olive.leung@cpce-polyu.edu.hk))
+* **Subject Lecturer:** CHAN, Long-fung Lazarus (✉️ [lazarus.chan@cpce-polyu.edu.hk](mailto:lazarus.chan@cpce-polyu.edu.hk))
+
+---
+
+## 📦 Resources & Downloads
+
+### Unity 6 Tutorial Example Package
+This package contains pre-configured scenes, grayboxing materials, basic UI canvases, and starter C# scripts required for Weeks 1-6 tutorials.
+
+* 📥 **[Download Tutorial Package v1.0 (.unitypackage)](#)** *(Mock link - upload your actual file to the repo releases)*
+* ⚠️ **Requirement:** Unity 6 (2023.3+) or newer.
+
+**Setup Instructions:**
+1. Open your Unity 6 project.
+2. Go to `Assets > Import Package > Custom Package...`
+3. Select the downloaded `.unitypackage` file and click **Import**.
+
+---
+
+## 📅 Tentative Teaching Schedule
+
+| Wk | Lecture Topic | Tutorial (Unity & C#) | Remarks |
+|:---:|---|---|---|
+| **1** | **Intro to Interactivity & Gamification:** Interactivity vs. passive consumption; role of designer. | **Unity Basic I:** Installation & interface overview; project setup. | |
+| **2** | **The art of Playing:** Intrinsic vs. extrinsic motivation; Bartle’s taxonomy; Flow state. | **Unity Basic II:** GameObjects & Components; Transform tools; Prefabs basics. | |
+| **3** | **Information Architecture (IA):** Organising systems; navigation structures; hierarchy. | **Asset Management:** Importing assets; material basics; organising project window. | |
+| **4** | **User Flow & UX Design:** Mapping the player journey; wireframing. | **Intro to UI in Unity:** Canvas system; anchors and pivots; interactive buttons. | 🚨 **Assign 1 Due** |
+| **5** | **Data Flow & Logic:** Processing information; input/output; state machines. | **Scripting Basics (C#):** Variables, functions; connecting UI to scripts; basic inputs. | |
+| **6** | **Grayboxing & Level Design:** Low-fidelity prototyping; spatial design and pacing. | **Prototyping in Unity:** Probuilder/primitives; grayboxing; first-person controller. | |
+| **7** | **Assignment 2: Research Presentation** | **Assignment 2: Research Presentation** | 🚨 **Assign 2 Due** |
+| **8** | **Rendering:** Rendering pipeline; lighting types (real-time vs baked); post-processing. | **Lighting & Camera:** Directional/point lights; skyboxes; camera constraints. | |
+| **9** | **Feedback Loops & Juiciness:** Positive/negative feedback; "Juice" (screen shake, particles, sound). | **Animation & Sound:** Animator controller; adding AudioSource. | |
+| **10** | **Gamification Mechanics:** Points, badges, leaderboards (PBL); progression systems. | **Advanced Interaction:** Triggers and colliders; simple logic for items; win/loss states. | |
+| **11** | **Group Project Workshop:** Technical troubleshooting. | **Group Project Workshop:** Technical troubleshooting & consultation. | |
+| **12** | **Group Project Workshop:** Technical troubleshooting. | **Polishing & Build:** Optimization basics; building the project for PC/Mac. | |
+| **13** | **Final Presentation:** Group Project Showcase | **Final Presentation:** Group Project Showcase | 🚨 **Assign 3 Due** |
+
+---
+
+## 📊 Assessments (100% Continuous Assessment)
+
+1. **Individual Assignment 1 (30%)** - *Game Design Document & Paper Prototyping*
+2. **Individual Assignment 2 (30%)** - *Digital Prototyping (Grayboxing or UI)*
+3. **Group Project (40%)** - *Interactive Experience (Full playable game in Unity)*
+
+> **⚠️ Plagiarism Warning:** 
+> You are strongly advised to pay attention to the rules and guidance notes regarding plagiarism. The College may take disciplinary actions against students when there is evidence of collusion. All included work of others must be attributed to its source.
+
+---
+
+## 📚 Recommended References
+
+* Adams, E. (2010). *Fundamentals of Game Design*. (2nd ed.), Berkeley, CA: New Riders.
+* Fullerton, T. & Swain, C. (2018). *Game Design Workshop: A Playcentric Approach to Creating Innovative Games*. (4th ed.), Boca Raton, FL: CRC Press.
+*
