@@ -11,30 +11,30 @@
         .tab-content.active { display: block; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col">
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
 
     <!-- Header -->
-    <header class="bg-indigo-900 text-white py-12 px-6 shadow-md">
+    <header class="bg-black text-white py-12 px-6 shadow-md">
         <div class="max-w-5xl mx-auto">
-            <p class="text-indigo-200 text-sm font-semibold tracking-wider uppercase mb-2">Hong Kong Community College (Semester 2, 2025/2026)</p>
-            <h1 class="text-3xl md:text-5xl font-bold mb-4">SHDH2322 / SHDH2026<br><span class="text-indigo-300">Interactivity in Game Context</span></h1>
-            <p class="text-lg text-indigo-100 max-w-2xl">Explore the fundamental concepts of game design, playful user experience, and interactivity using Unity.</p>
+            <p class="text-gray-400 text-sm font-semibold tracking-wider uppercase mb-2">PolyU CPCE (Semester 2, 2025/2026)</p>
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">SHDH2322 / SHDH2026<br><span class="text-gray-300">Interactivity in Game Context</span></h1>
+            <p class="text-lg text-gray-400 max-w-2xl">Explore the fundamental concepts of game design, playful user experience, and interactivity using Unity.</p>
         </div>
     </header>
 
     <!-- Navigation -->
-    <nav class="bg-white border-b border-slate-200 sticky top-0 z-10 shadow-sm overflow-x-auto">
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-10 shadow-sm overflow-x-auto">
         <div class="max-w-5xl mx-auto flex">
-            <button onclick="switchTab('home')" id="btn-home" class="tab-btn active flex items-center gap-2 px-6 py-4 font-medium text-sm transition-colors whitespace-nowrap border-b-2 border-indigo-600 text-indigo-700">
+            <button onclick="switchTab('home')" id="btn-home" class="tab-btn active flex items-center gap-2 px-6 py-4 font-medium text-sm transition-colors whitespace-nowrap border-b-2 border-black text-black">
                 <i class="fas fa-info-circle"></i> Overview
             </button>
-            <button onclick="switchTab('schedule')" id="btn-schedule" class="tab-btn flex items-center gap-2 px-6 py-4 font-medium text-sm transition-colors whitespace-nowrap text-slate-500 hover:text-indigo-600 hover:bg-slate-50 border-b-2 border-transparent">
+            <button onclick="switchTab('schedule')" id="btn-schedule" class="tab-btn flex items-center gap-2 px-6 py-4 font-medium text-sm transition-colors whitespace-nowrap text-gray-500 hover:text-black hover:bg-gray-50 border-b-2 border-transparent">
                 <i class="fas fa-calendar-alt"></i> Schedule
             </button>
-            <button onclick="switchTab('assessments')" id="btn-assessments" class="tab-btn flex items-center gap-2 px-6 py-4 font-medium text-sm transition-colors whitespace-nowrap text-slate-500 hover:text-indigo-600 hover:bg-slate-50 border-b-2 border-transparent">
+            <button onclick="switchTab('assessments')" id="btn-assessments" class="tab-btn flex items-center gap-2 px-6 py-4 font-medium text-sm transition-colors whitespace-nowrap text-gray-500 hover:text-black hover:bg-gray-50 border-b-2 border-transparent">
                 <i class="fas fa-file-alt"></i> Assessments
             </button>
-            <button onclick="switchTab('resources')" id="btn-resources" class="tab-btn flex items-center gap-2 px-6 py-4 font-medium text-sm transition-colors whitespace-nowrap text-slate-500 hover:text-indigo-600 hover:bg-slate-50 border-b-2 border-transparent">
+            <button onclick="switchTab('resources')" id="btn-resources" class="tab-btn flex items-center gap-2 px-6 py-4 font-medium text-sm transition-colors whitespace-nowrap text-gray-500 hover:text-black hover:bg-gray-50 border-b-2 border-transparent">
                 <i class="fas fa-download"></i> Resources & Unity
             </button>
         </div>
@@ -45,12 +45,12 @@
         
         <!-- OVERVIEW TAB -->
         <div id="home" class="tab-content active space-y-8">
-            <section class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                <h2 class="text-2xl font-bold text-indigo-900 mb-4 border-b pb-2">Course Objectives</h2>
-                <p class="text-slate-700 mb-4 leading-relaxed">This subject introduces the fundamental concepts of game design, playful user experience and interactivity. It aims to enable students to construct narrative interaction designs in the game context based on exploring the principles of interactive storytelling, dynamic game balancing and user psychology.</p>
+            <section class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <h2 class="text-2xl font-bold text-black mb-4 border-b pb-2">Course Objectives</h2>
+                <p class="text-gray-700 mb-4 leading-relaxed">This subject introduces the fundamental concepts of game design, playful user experience and interactivity. It aims to enable students to construct narrative interaction designs in the game context based on exploring the principles of interactive storytelling, dynamic game balancing and user psychology.</p>
                 
-                <h3 class="text-lg font-semibold text-slate-800 mt-6 mb-3">Intended Learning Outcomes:</h3>
-                <ul class="list-disc pl-6 space-y-2 text-slate-700">
+                <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-3">Intended Learning Outcomes:</h3>
+                <ul class="list-disc pl-6 space-y-2 text-gray-700">
                     <li>Describe the fundamentals of interaction design in game context.</li>
                     <li>Apply design skills through prototyping non-digital games.</li>
                     <li>Employ psychological knowledge of human behavior in playing experiences.</li>
@@ -59,21 +59,21 @@
             </section>
 
             <section class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 flex items-start gap-4">
-                    <div class="bg-indigo-100 p-3 rounded-full text-indigo-600"><i class="fas fa-user-tie fa-lg"></i></div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex items-start gap-4">
+                    <div class="bg-gray-100 p-3 rounded-full text-black"><i class="fas fa-user-tie fa-lg"></i></div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-800">Subject Leader</h3>
-                        <p class="text-slate-700 font-medium">LEUNG, Ching-man Olive</p>
-                        <p class="text-sm text-slate-500 mt-1"><i class="fas fa-map-marker-alt w-4"></i> Office: WK-S1312</p>
-                        <p class="text-sm text-indigo-600 mt-1"><i class="fas fa-envelope w-4"></i> olive.leung@cpce-polyu.edu.hk</p>
+                        <h3 class="font-bold text-lg text-gray-800">Subject Leader</h3>
+                        <p class="text-gray-700 font-medium">LEUNG, Ching-man Olive</p>
+                        <p class="text-sm text-gray-500 mt-1"><i class="fas fa-map-marker-alt w-4"></i> Office: WK-S1312</p>
+                        <p class="text-sm text-black mt-1"><i class="fas fa-envelope w-4"></i> olive.leung@cpce-polyu.edu.hk</p>
                     </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 flex items-start gap-4">
-                    <div class="bg-indigo-100 p-3 rounded-full text-indigo-600"><i class="fas fa-chalkboard-teacher fa-lg"></i></div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex items-start gap-4">
+                    <div class="bg-gray-100 p-3 rounded-full text-black"><i class="fas fa-chalkboard-teacher fa-lg"></i></div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-800">Subject Lecturer</h3>
-                        <p class="text-slate-700 font-medium">CHAN, Long-fung Lazarus</p>
-                        <p class="text-sm text-indigo-600 mt-1"><i class="fas fa-envelope w-4"></i> lazarus.chan@cpce-polyu.edu.hk</p>
+                        <h3 class="font-bold text-lg text-gray-800">Subject Lecturer</h3>
+                        <p class="text-gray-700 font-medium">CHAN, Long-fung Lazarus</p>
+                        <p class="text-sm text-black mt-1"><i class="fas fa-envelope w-4"></i> lazarus.chan@cpce-polyu.edu.hk</p>
                     </div>
                 </div>
             </section>
@@ -81,22 +81,22 @@
 
         <!-- SCHEDULE TAB -->
         <div id="schedule" class="tab-content">
-            <div class="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
-                <div class="p-6 border-b border-slate-200 bg-slate-50">
-                    <h2 class="text-2xl font-bold text-indigo-900">Tentative Teaching Schedule</h2>
-                    <p class="text-slate-600 mt-1">1 hour of lecture & 2 hours of tutorial per week.</p>
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+                <div class="p-6 border-b border-gray-200 bg-gray-50">
+                    <h2 class="text-2xl font-bold text-black">Tentative Teaching Schedule</h2>
+                    <p class="text-gray-600 mt-1">1 hour of lecture & 2 hours of tutorial per week.</p>
                 </div>
                 <div class="overflow-x-auto">
                     <table class="w-full text-left border-collapse">
                         <thead>
-                            <tr class="bg-slate-100 text-slate-700 text-sm uppercase tracking-wider">
+                            <tr class="bg-gray-100 text-gray-700 text-sm uppercase tracking-wider">
                                 <th class="p-4 border-b font-semibold w-16 text-center">Wk</th>
                                 <th class="p-4 border-b font-semibold">Lecture</th>
                                 <th class="p-4 border-b font-semibold">Tutorial (Unity & C#)</th>
                                 <th class="p-4 border-b font-semibold w-32">Remarks</th>
                             </tr>
                         </thead>
-                        <tbody class="text-slate-700 divide-y divide-slate-200" id="schedule-body">
+                        <tbody class="text-gray-700 divide-y divide-gray-200" id="schedule-body">
                             <!-- Populated by JS -->
                         </tbody>
                     </table>
@@ -106,17 +106,17 @@
 
         <!-- ASSESSMENTS TAB -->
         <div id="assessments" class="tab-content space-y-6">
-            <h2 class="text-2xl font-bold text-indigo-900 mb-6">Continuous Assessment (100%)</h2>
+            <h2 class="text-2xl font-bold text-black mb-6">Continuous Assessment (100%)</h2>
             
             <div class="grid gap-4" id="assessments-container">
                 <!-- Populated by JS -->
             </div>
 
-            <div class="mt-8 bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg shadow-sm">
-                <h3 class="text-lg font-bold text-amber-800 flex items-center gap-2 mb-2">
+            <div class="mt-8 bg-gray-100 border-l-4 border-gray-800 p-6 rounded-r-lg shadow-sm">
+                <h3 class="text-lg font-bold text-black flex items-center gap-2 mb-2">
                     <i class="fas fa-exclamation-triangle"></i> Plagiarism Warning
                 </h3>
-                <p class="text-amber-900 text-sm leading-relaxed">
+                <p class="text-gray-800 text-sm leading-relaxed">
                     You are strongly advised to pay attention to the rules and guidance notes regarding plagiarism. The College may take disciplinary actions against students when there is evidence of collusion. All included work of others must be attributed to its source.
                 </p>
             </div>
@@ -124,44 +124,54 @@
 
         <!-- RESOURCES TAB -->
         <div id="resources" class="tab-content space-y-8">
-            <section class="bg-white p-6 rounded-lg shadow-sm border border-indigo-200 border-t-4 border-t-indigo-600">
+            <section class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 border-t-4 border-t-black">
                 <div class="flex items-start gap-4">
-                    <div class="bg-indigo-100 p-4 rounded-lg text-indigo-600 hidden sm:block">
-                        <i class="fab fa-unity fa-2x"></i>
+                    <div class="bg-gray-100 p-4 rounded-lg text-black hidden sm:block">
+                        <i class="fab fa-github fa-2x"></i>
                     </div>
-                    <div>
-                        <span class="inline-block px-2 py-1 bg-indigo-100 text-indigo-800 text-xs font-bold rounded mb-2">Official Resource</span>
-                        <h2 class="text-xl font-bold text-slate-800 mb-2">Unity 6 Tutorial Example Package</h2>
-                        <p class="text-slate-600 mb-4 text-sm leading-relaxed">Download the official starter package for our tutorial sessions. This package contains pre-configured scenes, grayboxing materials, basic UI canvases, and starter C# scripts required for Weeks 1-6.</p>
-                        <div class="flex flex-wrap gap-3">
-                            <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded font-medium text-sm transition-colors flex items-center gap-2 shadow-sm">
-                                <i class="fas fa-download"></i> Download .unitypackage (v6.0)
-                            </button>
-                            <button class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 px-4 py-2 rounded font-medium text-sm transition-colors flex items-center gap-2 shadow-sm">
-                                <i class="fas fa-book"></i> View Setup Guide
-                            </button>
+                    <div class="w-full">
+                        <span class="inline-block px-2 py-1 bg-gray-200 text-gray-800 text-xs font-bold rounded mb-2">GitHub Repository</span>
+                        <h2 class="text-xl font-bold text-gray-800 mb-2">Unity Tutorial Example Packages</h2>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Download the official starter packages for our tutorial sessions directly from the course GitHub repository. These packages contain pre-configured scenes, materials, basic UI canvases, and starter C# scripts.</p>
+                        
+                        <div class="flex flex-col gap-3 w-full max-w-md">
+                            <a href="https://github.com/Lazaruschan/SHDH2367-INTERACTIVITY-IN-GAME-CONTEXT/raw/main/Asset%20Management_package.unitypackage" class="bg-black hover:bg-gray-800 text-white px-4 py-3 rounded font-medium text-sm transition-colors flex items-center justify-between shadow-sm">
+                                <span class="flex items-center gap-2"><i class="fas fa-box-open"></i> Asset Management Package</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                            <a href="https://github.com/Lazaruschan/SHDH2367-INTERACTIVITY-IN-GAME-CONTEXT/raw/main/Introduction%20to%20UI_package.unitypackage" class="bg-black hover:bg-gray-800 text-white px-4 py-3 rounded font-medium text-sm transition-colors flex items-center justify-between shadow-sm">
+                                <span class="flex items-center gap-2"><i class="fas fa-layer-group"></i> Introduction to UI Package</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                            <a href="https://github.com/Lazaruschan/SHDH2367-INTERACTIVITY-IN-GAME-CONTEXT/raw/main/Scripting%20Basics_package.unitypackage" class="bg-black hover:bg-gray-800 text-white px-4 py-3 rounded font-medium text-sm transition-colors flex items-center justify-between shadow-sm">
+                                <span class="flex items-center gap-2"><i class="fas fa-code"></i> Scripting Basics Package</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                            
+                            <a href="https://github.com/Lazaruschan/SHDH2367-INTERACTIVITY-IN-GAME-CONTEXT" target="_blank" class="mt-2 bg-white hover:bg-gray-50 text-gray-800 border border-gray-300 px-4 py-2 rounded font-medium text-sm transition-colors flex items-center justify-center gap-2 shadow-sm">
+                                <i class="fab fa-github"></i> View Full Repository on GitHub
+                            </a>
                         </div>
-                        <p class="text-xs text-slate-500 mt-3">* Requires Unity 6 (2023.3+) or newer. File size: ~45MB.</p>
                     </div>
                 </div>
             </section>
 
             <div class="grid md:grid-cols-2 gap-6">
-                <section class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                    <h3 class="text-lg font-bold text-slate-800 mb-4 border-b pb-2 flex items-center gap-2"><i class="fas fa-book-reader text-indigo-500"></i> Recommended Readings</h3>
-                    <ul class="space-y-4 text-sm text-slate-700">
+                <section class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-lg font-bold text-gray-800 mb-4 border-b pb-2 flex items-center gap-2"><i class="fas fa-book-reader text-gray-600"></i> Recommended Readings</h3>
+                    <ul class="space-y-4 text-sm text-gray-700">
                         <li><strong>Adams, E. (2010).</strong> <em>Fundamentals of Game Design</em>. (2nd ed.), Berkeley, CA: New Riders.</li>
                         <li><strong>Fullerton, T. & Swain, C. (2018).</strong> <em>Game Design Workshop: A Playcentric Approach to Creating Innovative Games</em>.</li>
                         <li><strong>McGonigal, J (2011).</strong> <em>How Computer Game Makes You Smarter</em>.</li>
                     </ul>
                 </section>
 
-                <section class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                    <h3 class="text-lg font-bold text-slate-800 mb-4 border-b pb-2 flex items-center gap-2"><i class="fas fa-laptop-code text-indigo-500"></i> Software Requirements</h3>
-                    <ul class="space-y-3 text-sm text-slate-700">
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Unity Hub & Unity 6 Editor</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Visual Studio 2022 (or VS Code) for C# Scripting</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Basic image editing software (Photoshop, GIMP, etc.)</li>
+                <section class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-lg font-bold text-gray-800 mb-4 border-b pb-2 flex items-center gap-2"><i class="fas fa-laptop-code text-gray-600"></i> Software Requirements</h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-black"></i> Unity Hub & Unity 6 Editor</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-black"></i> Visual Studio 2022 (or VS Code) for C# Scripting</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-black"></i> Basic image editing software (Photoshop, GIMP, etc.)</li>
                     </ul>
                 </section>
             </div>
@@ -170,8 +180,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm mt-auto">
-        <p>© 2025/2026 College of Professional and Continuing Education, HKCC.</p>
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm mt-auto">
+        <p>© 2025/2026 PolyU CPCE.</p>
         <p class="mt-1">SHDH2322 / SHDH2026 Interactivity in Game Context</p>
     </footer>
 
@@ -203,12 +213,12 @@
         const scheduleBody = document.getElementById('schedule-body');
         scheduleData.forEach(row => {
             const tr = document.createElement('tr');
-            tr.className = "hover:bg-slate-50 transition-colors";
+            tr.className = "hover:bg-gray-50 transition-colors";
             tr.innerHTML = `
                 <td class="p-4 border-b text-center font-medium">${row.week}</td>
                 <td class="p-4 border-b">${row.lecture}</td>
                 <td class="p-4 border-b">${row.tutorial}</td>
-                <td class="p-4 border-b font-medium text-red-600 text-sm">${row.remarks}</td>
+                <td class="p-4 border-b font-bold text-black text-sm">${row.remarks}</td>
             `;
             scheduleBody.appendChild(tr);
         });
@@ -217,14 +227,14 @@
         const assessmentsContainer = document.getElementById('assessments-container');
         assessmentsData.forEach(item => {
             const div = document.createElement('div');
-            div.className = "bg-white p-6 rounded-lg shadow-sm border border-slate-200 flex flex-col md:flex-row md:items-center gap-4";
+            div.className = "bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex flex-col md:flex-row md:items-center gap-4";
             div.innerHTML = `
-                <div class="bg-indigo-50 text-indigo-700 font-bold text-2xl p-4 rounded-lg text-center min-w-[100px]">
+                <div class="bg-gray-100 text-black font-bold text-2xl p-4 rounded-lg text-center min-w-[100px]">
                     ${item.weight}
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-1">${item.name}</h3>
-                    <p class="text-slate-600">${item.desc}</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">${item.name}</h3>
+                    <p class="text-gray-600">${item.desc}</p>
                 </div>
             `;
             assessmentsContainer.appendChild(div);
@@ -241,13 +251,13 @@
 
             // Update button styles
             document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.classList.remove('border-indigo-600', 'text-indigo-700');
-                btn.classList.add('text-slate-500', 'border-transparent');
+                btn.classList.remove('border-black', 'text-black');
+                btn.classList.add('text-gray-500', 'border-transparent');
             });
             
             const activeBtn = document.getElementById(`btn-${tabId}`);
-            activeBtn.classList.remove('text-slate-500', 'border-transparent');
-            activeBtn.classList.add('border-indigo-600', 'text-indigo-700');
+            activeBtn.classList.remove('text-gray-500', 'border-transparent');
+            activeBtn.classList.add('border-black', 'text-black');
         }
     </script>
 </body>
