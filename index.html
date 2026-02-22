@@ -112,11 +112,11 @@
                 <!-- Populated by JS -->
             </div>
 
-            <div class="mt-8 bg-gray-100 border-l-4 border-gray-800 p-6 rounded-r-lg shadow-sm">
-                <h3 class="text-lg font-bold text-black flex items-center gap-2 mb-2">
+            <div class="mt-8 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg shadow-sm">
+                <h3 class="text-lg font-bold text-yellow-800 flex items-center gap-2 mb-2">
                     <i class="fas fa-exclamation-triangle"></i> Plagiarism Warning
                 </h3>
-                <p class="text-gray-800 text-sm leading-relaxed">
+                <p class="text-yellow-900 text-sm leading-relaxed">
                     You are strongly advised to pay attention to the rules and guidance notes regarding plagiarism. The College may take disciplinary actions against students when there is evidence of collusion. All included work of others must be attributed to its source.
                 </p>
             </div>
@@ -156,16 +156,7 @@
                 </div>
             </section>
 
-            <div class="grid md:grid-cols-2 gap-6">
-                <section class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                    <h3 class="text-lg font-bold text-gray-800 mb-4 border-b pb-2 flex items-center gap-2"><i class="fas fa-book-reader text-gray-600"></i> Recommended Readings</h3>
-                    <ul class="space-y-4 text-sm text-gray-700">
-                        <li><strong>Adams, E. (2010).</strong> <em>Fundamentals of Game Design</em>. (2nd ed.), Berkeley, CA: New Riders.</li>
-                        <li><strong>Fullerton, T. & Swain, C. (2018).</strong> <em>Game Design Workshop: A Playcentric Approach to Creating Innovative Games</em>.</li>
-                        <li><strong>McGonigal, J (2011).</strong> <em>How Computer Game Makes You Smarter</em>.</li>
-                    </ul>
-                </section>
-
+            <div class="grid md:grid-cols-1 gap-6">
                 <section class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                     <h3 class="text-lg font-bold text-gray-800 mb-4 border-b pb-2 flex items-center gap-2"><i class="fas fa-laptop-code text-gray-600"></i> Software Requirements</h3>
                     <ul class="space-y-3 text-sm text-gray-700">
@@ -218,7 +209,7 @@
                 <td class="p-4 border-b text-center font-medium">${row.week}</td>
                 <td class="p-4 border-b">${row.lecture}</td>
                 <td class="p-4 border-b">${row.tutorial}</td>
-                <td class="p-4 border-b font-bold text-black text-sm">${row.remarks}</td>
+                <td class="p-4 border-b font-bold text-yellow-600 text-sm">${row.remarks}</td>
             `;
             scheduleBody.appendChild(tr);
         });
